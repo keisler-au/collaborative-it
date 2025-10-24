@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Use the new, softer 'Nunito' font */
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    /* Use a dark graphite color instead of pure black */
+    color: var(--text-color);
+    line-height: 1.6;
+    /* Use the pale grey from your image backgrounds */
+    background: var(--body-bg);
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+:root {
+    /* --- STEP 2: New Color Palette --- */
+    /* Sampled from your illustrations */
+    --primary-color: #8C92AC;
+    /* Muted Blue-Grey (from bird/elephant) */
+    --secondary-color: #AB8476;
+    /* Muted Rosy-Brown (from leaves) */
+    --text-color: #424242;
+    /* Dark Graphite Grey */
+    --background-color: #F8F8F7;
+    /* Paper Off-White (for nav) */
+    --body-bg: #E8E9EB;
+    /* Pale Grey (from image background) */
+
+    --max-width-img: 500px;
+}
+
+.title {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.75rem;
+    font-weight: 400;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.title--lg {
+    font-size: 2.5rem;
+}
+
+.title:hover {
+    opacity: 0.8;
+}

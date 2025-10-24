@@ -1,0 +1,60 @@
+
+.nav-wrapper {
+    position: sticky;
+    top: 1rem;
+    z-index: 100;
+    padding: 1.5rem 1rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0.75rem 4.25rem;
+    /* Use the new 'paper' background color */
+    background: var(--background-color);
+    border-radius: 999px;
+    /* Make the shadow much softer */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Add a light 'pencil line' border */
+    border: 1px solid #DCDCDC;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    /* Use a softer grey for nav links */
+    color: #5a5a5a;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* The gradient will update to the new colors */
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    /* On hover, use the new primary color */
+    color: var(--primary-color);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
