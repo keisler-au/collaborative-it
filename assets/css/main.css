@@ -18,9 +18,10 @@ body {
     --text-color: #424242;
     --background-color: #F8F8F7;
     --body-bg: #E8E9EB;
-    
-    --max-width-img: 500px;
+    --light-grey-border: #DCDCDC;
 
+    --max-width-img: 500px;
+    --max-width-content: 1100px;
 }
 
 .title {
@@ -42,4 +43,34 @@ body {
 
 .title:hover {
     opacity: 0.8;
+}
+
+.content-section {
+    padding: 6rem 2rem;
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-section.alternate-bg {
+    background-color: #FDFDFC;
+    border-top: 1px solid var(--light-grey-border);
+    border-bottom: 1px solid var(--light-grey-border);
+}
+
+.section-header {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.section-subheader {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #5a5a5a;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.7;
 }
