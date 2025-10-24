@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const headers = document.querySelectorAll('.header');
-    const desiredWidth = 400;
+    const desiredWidth = 500;
 
     headers.forEach(header => {
         const fitText = () => {

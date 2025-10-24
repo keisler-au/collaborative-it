@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collaborative IT</title>
     <style>
+        /* --- STEP 1: Import Fonts --- */
+        /* We'll import a hand-drawn font for headers and a softer font for the body */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Patrick+Hand&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -12,21 +16,27 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            color: #1a1a1a;
+            /* Use the new, softer 'Nunito' font */
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            /* Use a dark graphite color instead of pure black */
+            color: var(--text-color);
             line-height: 1.6;
-            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e0e7ff 100%);
+            /* Use the pale grey from your image backgrounds */
+            background: var(--body-bg);
             overflow-x: hidden;
             height: 100vh;
         }
 
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #7c3aed;
-            --text-color: #1a1a1a;
-            --background-color: #f8fafc;
+            /* --- STEP 2: New Color Palette --- */
+            /* Sampled from your illustrations */
+            --primary-color: #8C92AC;   /* Muted Blue-Grey (from bird/elephant) */
+            --secondary-color: #AB8476; /* Muted Rosy-Brown (from leaves) */
+            --text-color: #424242;      /* Dark Graphite Grey */
+            --background-color: #F8F8F7;/* Paper Off-White (for nav) */
+            --body-bg: #E8E9EB;         /* Pale Grey (from image background) */
 
-            --max-width-img: 400px;
+            --max-width-img: 500px;
         }
 
         .nav-wrapper {
@@ -43,15 +53,22 @@
             max-width: 680px;
             margin: 0 auto;
             padding: 0.75rem 4.25rem;
-            background: #ffffff;
+            /* Use the new 'paper' background color */
+            background: var(--background-color);
             border-radius: 999px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-            border: 1px solid rgba(0,0,0,0.06);
+            /* Make the shadow much softer */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            /* Add a light 'pencil line' border */
+            border: 1px solid #DCDCDC;
         }
 
         .logo {
-            font-size: 1.35rem;
-            font-weight: 700;
+            /* --- STEP 3: Update Fonts --- */
+            /* Use the new hand-drawn font */
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.75rem; /* Make it a bit bigger */
+            font-weight: 400;  /* Hand-drawn fonts often look better non-bolded */
+            /* The gradient will now use your new --primary/--secondary colors! */
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -73,7 +90,8 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #4b5563;
+            /* Use a softer grey for nav links */
+            color: #5a5a5a;
             font-weight: 500;
             font-size: 0.95rem;
             transition: all 0.3s ease;
@@ -87,11 +105,13 @@
             left: 0;
             width: 0;
             height: 2px;
+            /* The gradient will update to the new colors */
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             transition: width 0.3s ease;
         }
 
         .nav-links a:hover {
+            /* On hover, use the new primary color */
             color: var(--primary-color);
         }
 
@@ -148,15 +168,23 @@
             max-width: var(--max-width-img);
         }
         .header {
+            /* --- STEP 3 (cont.): Update Header Font --- */
+            font-family: 'Patrick Hand', cursive;
+            font-size: 3.25rem; /* Make the header font much larger */
+            font-weight: 400;
+            /* Add a very subtle shadow to lift it off the page */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+
             transition: opacity 1s ease-in-out;
             color: var(--primary-color);
+            /* This gradient updates to the new colors automatically */
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             white-space: nowrap;
             position: absolute;
-            top: 20px;
+            top: 30px; /* Adjust position slightly for new font size */
         }
 
         .right-column {
@@ -167,7 +195,8 @@
 
         .page-header-container .tagline {
             font-size: 1.1rem;
-            color: #475569;
+            /* Use a softer grey */
+            color: #5a5a5a;
             line-height: 1.5;
             font-weight: 500;
         }
@@ -187,7 +216,8 @@
         }
 
         .experience-list li {
-            color: #475569;
+            /* Use a softer grey */
+            color: #5a5a5a;
             font-size: 1rem;
             font-weight: 500;
             padding-left: 1.5rem;
@@ -200,6 +230,7 @@
             content: '•';
             position: absolute;
             left: 0;
+            /* This gradient updates automatically */
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -210,6 +241,7 @@
 
         .cta-button {
             display: inline-block;
+            /* This gradient updates automatically */
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
             padding: 0.9rem 2.2rem;
@@ -218,7 +250,9 @@
             font-weight: 600;
             font-size: 1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+            /* --- STEP 4: Update Button Shadow --- */
+            /* Change the blue shadow to one based on our new palette */
+            box-shadow: 0 10px 25px rgba(171, 132, 118, 0.25);
             position: relative;
             overflow: hidden;
             align-self: flex-start;
@@ -241,7 +275,8 @@
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.35);
+            /* Update the hover shadow color as well */
+            box-shadow: 0 15px 35px rgba(171, 132, 118, 0.35);
         }
 
         .cta-button:active {
@@ -267,19 +302,19 @@
             <div class="positioning-container">
                 <div id="header1" class="header-container">
                     <h1 class="header">Improve your Service Delivery</h1>
-                    <img src="2-nb.png" alt="Allied Health Service" id="img2">
+                    <img src="flowers-bees.png" alt="Allied Health Service" id="img2">
                 </div>
             </div>
             <div class="positioning-container">
                 <div id="header2" class="header-container">
                     <h2 class="header">Reduce your Admin Burden</h2>
-                    <img src="1-nb.png" alt="Allied Health Service" id="img1">
+                    <img src="birdie.png" alt="Allied Health Service" id="img1">
                 </div>
             </div>
             <div class="positioning-container">
                 <div id="header3" class="header-container">
                     <h3 class="header">Advance your Clinical Practice</h3>
-                    <img src="5-nb.png" alt="Allied Health Service" id="img4">
+                    <img src="elephants.png" alt="Allied Health Service" id="img4">
                 </div>
             </div>
         </div>
