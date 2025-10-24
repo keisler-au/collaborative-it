@@ -1,10 +1,9 @@
 
 .page-header-container {
     max-width: 1300px;
-    margin: 10rem auto;
+    margin: 5rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: 2rem; */
     align-items: center;
     justify-items: center;
     position: relative;
@@ -51,25 +50,19 @@
 }
 
 .header {
-    /* --- STEP 3 (cont.): Update Header Font --- */
     font-family: 'Patrick Hand', cursive;
     font-size: 3.25rem;
-    /* Make the header font much larger */
     font-weight: 400;
-    /* Add a very subtle shadow to lift it off the page */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
-
     transition: opacity 1s ease-in-out;
     color: var(--primary-color);
-    /* This gradient updates to the new colors automatically */
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     white-space: nowrap;
     position: absolute;
-    top: 30px;
-    /* Adjust position slightly for new font size */
+    top: 0;
 }
 
 .right-column {
@@ -80,7 +73,6 @@
 
 .page-header-container .tagline {
     font-size: 1.1rem;
-    /* Use a softer grey */
     color: #5a5a5a;
     line-height: 1.5;
     font-weight: 500;
@@ -126,7 +118,6 @@
 
 .cta-button {
     display: inline-block;
-    /* This gradient updates automatically */
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
     padding: 0.9rem 2.2rem;
@@ -135,8 +126,6 @@
     font-weight: 600;
     font-size: 1rem;
     transition: all 0.3s ease;
-    /* --- STEP 4: Update Button Shadow --- */
-    /* Change the blue shadow to one based on our new palette */
     box-shadow: 0 10px 25px rgba(171, 132, 118, 0.25);
     position: relative;
     overflow: hidden;
@@ -160,7 +149,6 @@
 
 .cta-button:hover {
     transform: translateY(-3px);
-    /* Update the hover shadow color as well */
     box-shadow: 0 15px 35px rgba(171, 132, 118, 0.35);
 }
 
