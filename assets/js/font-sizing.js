@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     const headers = document.querySelectorAll('.header');
     const desiredWidth = 500;
 
