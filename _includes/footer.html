@@ -1,9 +1,9 @@
-<footer class="site-footer">
-  <div class="footer-content">
+<footer class="site-footer text-center">
+  <div class="footer-content d-flex justify-between align-center mx-auto">
     <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-    <ul class="social-links">
+    <ul class="social-links d-flex list-style-none">
       {% for link in site.social.links %}
-        <li><a href="{{ link }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="{{ link }}" target="_blank" rel="noopener noreferrer" class="no-text-decoration">LinkedIn</a></li>
       {% endfor %}
     </ul>
   </div>

@@ -1,18 +1,9 @@
 .services-grid {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
-    text-align: left;
 }
 
 .service-card {
-    background: var(--background-color);
-    border-radius: 16px;
-    border: 1px solid var(--light-grey-border);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -22,22 +13,19 @@
 }
 
 .service-card h3 {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 2.2rem;
-    font-weight: 400;
+    font-size: var(--font-size-4xl);
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 .service-card p {
-    font-size: 1rem;
-    color: #5a5a5a;
+    font-size: var(--font-size-md);
+    color: var(--text-color-secondary);
     margin-bottom: 1.5rem;
     flex-grow: 1;
 }
 
 .service-card ul {
-    list-style-type: none;
     padding-left: 0;
     margin-bottom: 1.5rem;
 }
@@ -55,6 +43,6 @@
     position: absolute;
     left: 0;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: var(--font-size-lg);
     color: var(--secondary-color);
 }

@@ -1,24 +1,14 @@
 .contact-form-container {
     max-width: 700px;
     margin: 3rem auto 0 auto;
-    background: var(--background-color);
     padding: 3rem;
-    border-radius: 16px;
-    border: 1px solid var(--light-grey-border);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
 }
 
 .contact-form {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    text-align: left;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
 
 /* Full-width items */
 .form-group.full-width {
@@ -26,20 +16,18 @@
 }
 
 .contact-form label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #5a5a5a;
+    font-size: var(--font-size-xs);
+    color: var(--text-color-secondary);
     margin-bottom: 0.5rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
+    font-size: var(--font-size-md);
     padding: 0.9rem 1.1rem;
     border: 1px solid var(--light-grey-border);
     border-radius: 8px;
-    background: #fff;
+    background: var(--background-color-light);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -57,19 +45,8 @@
 
 .submit-btn {
     grid-column: 1 / -1;
-    /* Re-using cta-button styles */
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: white;
-    padding: 0.9rem 2.2rem;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s ease;
     box-shadow: 0 10px 25px rgba(171, 132, 118, 0.25);
-    border: none;
-    cursor: pointer;
-    text-align: center;
 }
 
 .submit-btn:hover {

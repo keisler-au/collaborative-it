@@ -1,9 +1,6 @@
 .about-container {
-    display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
-    align-items: center;
-    text-align: left;
     margin-top: 3rem;
 }
 
@@ -16,16 +13,14 @@
 }
 
 .about-content h3 {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 2.5rem;
-    font-weight: 400;
+    font-size: var(--font-size-5xl);
     color: var(--text-color);
     margin-bottom: 1rem;
 }
 
 .about-content p {
-    font-size: 1.1rem;
-    color: #5a5a5a;
+    font-size: var(--font-size-lg);
+    color: var(--text-color-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.7;
 }
