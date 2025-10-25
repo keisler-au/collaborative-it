@@ -74,3 +74,9 @@ body {
     margin: 0 auto 3rem auto;
     line-height: 1.7;
 }
+
+.not-found-section {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}

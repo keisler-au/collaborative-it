@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+
+    {% seo %}
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/nav-bar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Patrick+Hand&display=swap">    
+
+    <!-- Landing Page Styles -->
+    <link rel="stylesheet" href="assets/css/landing-page/about.css">
+    <link rel="stylesheet" href="assets/css/landing-page/contact.css">
+    <link rel="stylesheet" href="assets/css/landing-page/page-header.css">
+    <link rel="stylesheet" href="assets/css/landing-page/services.css">
+    <link rel="stylesheet" href="assets/css/landing-page/why-us.css">
+    
+    <!-- Scripts -->
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/font-sizing.js"></script>
+
+    {% include google-analytics.html %}
+</head>
+<body>
+    {% include nav-bar.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+</body>
+</html>
