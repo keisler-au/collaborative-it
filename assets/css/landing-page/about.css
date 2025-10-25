@@ -11,7 +11,7 @@
     max-width: 100%;
     border-radius: 12px;
     border: 1px solid var(--light-grey-border);
-    content: url('elephants.png'); 
+    content: url('/assets/images/logo.png'); 
     opacity: 0.8;
 }
 
