@@ -23,12 +23,16 @@
     border-radius: 12px;
 }
 
+
 .animated-headline {
     padding: 10px 30px;
-    font-size: var(--font-size-xl);
-    font-weight: var(--fw-700);
     letter-spacing: 2px;
     flex-wrap: wrap;
+}
+
+.animated-headline__text {
+    font-size: var(--font-size-xl);
+    font-weight: var(--fw-700);
 }
 
 .animated-headline__static-text {
@@ -37,8 +41,6 @@
 
 .animated-headline__dynamic-container {
     display: inline-block;
-    border-bottom: 1px solid var(--text-color);
-    padding-bottom: 5px;
     height: 1.2em; 
 }
 
@@ -47,6 +49,8 @@
     vertical-align: bottom;
     overflow: hidden;
     transition: width 0.5s ease-in-out;
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 5px;
 }
 
 .animated-headline__dynamic-word {
