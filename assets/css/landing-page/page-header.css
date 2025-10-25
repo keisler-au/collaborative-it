@@ -58,18 +58,6 @@
     display: inline-block;
 }
 
-@media (max-width: 600px) {
-
-    .animated-headline {
-        font-size: var(--font-size-md);
-        padding: 10px 20px;
-    }
-    .animated-headline__static-text {
-        padding-right: 10px;
-    }
-
-}
-
 .right-column {
     gap: 1.5rem;
 }

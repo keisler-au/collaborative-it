@@ -1,3 +1,6 @@
+/* ==========================================================================
+   1. Global Styles
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +15,9 @@ body {
     overflow-x: hidden;
 }
 
+/* ==========================================================================
+   2. Root Variables
+   ========================================================================== */
 :root {
     --primary-color: #8C92AC;
     --secondary-color: #AB8476;
@@ -41,6 +47,21 @@ body {
     --font-size-7xl: 3.5rem;
 }
 
+/* ==========================================================================
+   3. Layout Utilities
+   ========================================================================== */
+.d-flex { display: flex; }
+.flex-column { flex-direction: column; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.align-center { align-items: center; }
+.align-baseline { align-items: baseline; }
+.d-grid { display: grid; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+/* ==========================================================================
+   4. Typography Utilities
+   ========================================================================== */
 .title, .logo {
     font-size: var(--font-size-5xl);
     letter-spacing: -0.02em;
@@ -55,6 +76,52 @@ body {
     opacity: 0.8;
 }
 
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+
+.list-style-none { list-style: none; }
+.no-text-decoration { text-decoration: none; }
+
+/* ==========================================================================
+   5. Component Classes
+   ========================================================================== */
+.card {
+    background: var(--background-color);
+    border: 1px solid var(--light-grey-border);
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    padding: 2.5rem;
+}
+
+.button {
+    display: inline-block;
+    color: var(--text-color-light);
+    padding: 0.9rem 2.2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--font-size-md);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* ==========================================================================
+   6. Page Section Styles
+   ========================================================================== */
 .content-section {
     padding: 6rem 2rem;
     max-width: var(--max-width-content);
@@ -83,89 +150,4 @@ body {
 .not-found-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
-}
-
-/* Utility Classes */
-.d-flex {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.align-baseline {
-    align-items: baseline;
-}
-
-.d-grid {
-    display: grid;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-gradient {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.fw-400 { font-weight: 400; }
-.fw-500 { font-weight: 500; }
-.fw-600 { font-weight: 600; }
-.fw-700 { font-weight: 700; }
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.list-style-none {
-    list-style: none;
-}
-
-.no-text-decoration {
-    text-decoration: none;
-}
-
-/* Component Classes */
-.card {
-    background: var(--background-color);
-    border: 1px solid var(--light-grey-border);
-    border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
-    padding: 2.5rem;
-}
-
-.button {
-    display: inline-block;
-    color: var(--text-color-light);
-    padding: 0.9rem 2.2rem;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: var(--font-size-md);
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    text-align: center;
 }
