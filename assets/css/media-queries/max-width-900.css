@@ -5,10 +5,60 @@
        ========================================================================== */
     .nav {
         padding: 0.75rem 2rem;
+        position: relative;
     }
 
+    /* Show hamburger menu on tablet */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Mobile-style dropdown menu for tablets */
     .nav-links {
-        gap: 1.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--background-color);
+        border: 1px solid var(--light-grey-border);
+        border-radius: 16px;
+        margin-top: 1rem;
+        padding: 1rem 0;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        gap: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--light-grey-border);
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: var(--font-size-md);
+        width: 100%;
+    }
+
+    .nav-links a::after {
+        display: none;
     }
 
     /* ==========================================================================
