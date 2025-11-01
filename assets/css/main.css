@@ -31,7 +31,7 @@ body {
     --background-color-light: #fff;
     --background-color-alternate: #FDFDFC;
 
-    --max-width-img: 800px;
+    --max-width-img: 350px;
     --max-width-content: 1100px;
 
     --font-size-xs: 0.9rem;

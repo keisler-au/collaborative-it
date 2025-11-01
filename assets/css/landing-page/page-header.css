@@ -15,6 +15,7 @@
 .header-container {
     gap: 1rem;
     position: relative;
+    width: calc(var(--max-width-img) + 100px);
 }
 
 .header-container img {
@@ -27,7 +28,6 @@
     padding: 10px 30px;
     letter-spacing: 2px;
     flex-wrap: wrap;
-    padding-left: 150px;
 }
 
 .animated-headline__text {
