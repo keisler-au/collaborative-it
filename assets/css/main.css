@@ -68,6 +68,7 @@ body {
     font-size: var(--font-size-5xl);
     letter-spacing: -0.02em;
     transition: opacity 0.3s ease;
+    color: var(--primary-color);
 }
 
 .logo {
