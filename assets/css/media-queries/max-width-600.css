@@ -97,7 +97,6 @@
     .animated-headline {
         font-size: var(--font-size-sm);
         padding: 0;
-        padding-left: 20px;
         min-width: auto;
     }
 
@@ -118,7 +117,7 @@
     }
 
     .header-container img {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .cta-button {
