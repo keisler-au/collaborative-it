@@ -19,8 +19,8 @@ body {
    2. Root Variables
    ========================================================================== */
 :root {
-    --primary-color: #8C92AC;
-    --secondary-color: #AB8476;
+    --primary-color: #3150ac;
+    --secondary-color: #4b2f72;
     --text-color: #424242;
     --background-color: #F8F8F7;
     --body-bg: #E8E9EB;
@@ -31,7 +31,7 @@ body {
     --background-color-light: #fff;
     --background-color-alternate: #FDFDFC;
 
-    --max-width-img: 500px;
+    --max-width-img: 700px;
     --max-width-content: 1100px;
 
     --font-size-xs: 0.9rem;

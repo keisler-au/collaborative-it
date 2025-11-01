@@ -14,7 +14,6 @@
 
 .header-container {
     gap: 1rem;
-    max-width: var(--max-width-img);
     position: relative;
 }
 
@@ -28,6 +27,7 @@
     padding: 10px 30px;
     letter-spacing: 2px;
     flex-wrap: wrap;
+    padding-left: 150px;
 }
 
 .animated-headline__text {
@@ -41,7 +41,7 @@
 
 .animated-headline__dynamic-container {
     display: inline-block;
-    height: 1.2em; 
+    height: 65%; 
 }
 
 .animated-headline__dynamic-wrapper {
@@ -50,7 +50,8 @@
     overflow: hidden;
     transition: width 0.5s ease-in-out;
     border-bottom: 1px solid var(--text-color);
-    padding-bottom: 5px;
+    vertical-align: baseline;
+    height: 100%;
 }
 
 .animated-headline__dynamic-word {
