@@ -18,6 +18,12 @@
     margin-bottom: 1rem;
 }
 
+.service-card h4 {
+    font-size: var(--font-size-lg);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
 .service-card p {
     font-size: var(--font-size-md);
     color: var(--text-color-secondary);

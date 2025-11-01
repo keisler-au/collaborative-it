@@ -31,7 +31,7 @@ body {
     --background-color-light: #fff;
     --background-color-alternate: #FDFDFC;
 
-    --max-width-img: 700px;
+    --max-width-img: 800px;
     --max-width-content: 1100px;
 
     --font-size-xs: 0.9rem;
@@ -45,6 +45,8 @@ body {
     --font-size-5xl: 2.5rem;
     --font-size-6xl: 3.25rem;
     --font-size-7xl: 3.5rem;
+
+    --border-radius: 16px;
 }
 
 /* ==========================================================================
@@ -100,7 +102,7 @@ body {
 .card {
     background: var(--background-color);
     border: 1px solid var(--light-grey-border);
-    border-radius: 16px;
+    border-radius: var(--border-radius);
     box-shadow: 0 6px 16px rgba(0,0,0,0.05);
     padding: 2.5rem;
 }
@@ -131,6 +133,7 @@ body {
     background-color: var(--background-color-alternate);
     border-top: 1px solid var(--light-grey-border);
     border-bottom: 1px solid var(--light-grey-border);
+    border-radius: var(--border-radius);
 }
 
 .section-header {
