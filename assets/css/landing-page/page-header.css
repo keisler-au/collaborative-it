@@ -16,6 +16,7 @@
     gap: 1rem;
     position: relative;
     width: calc(var(--max-width-img) + 100px);
+    margin: 0 auto;
 }
 
 .header-container img {
@@ -28,11 +29,13 @@
     padding: 10px 0;
     letter-spacing: 2px;
     flex-wrap: wrap;
+    color: var(--primary-color);
+    min-width: 40rem;
 }
 
 .animated-headline__text {
-    font-size: var(--font-size-xl);
-    font-weight: var(--fw-700);
+    font-size: var(--font-size-3xl);
+    font-weight: bold;
 }
 
 .animated-headline__static-text {
