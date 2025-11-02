@@ -12,11 +12,11 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     background: linear-gradient(to right, 
-        #ffffff 0%, 
-        rgba(173, 216, 230, 0.15) 25%, 
-        /* rgba(144, 238, 144, 0.12) 50%,  */
-        rgba(255, 182, 193, 0.12) 75%, 
-        rgba(255, 200, 124, 0.15) 100%
+        var(--page-header-bg) 0%, 
+        /* var(--page-header-bg-5) 25%,  */
+        /* var(--page-header-bg-4) 50%,  */
+        var(--page-header-bg-3) 75%, 
+        var(--page-header-bg-2) 100%
     ), var(--body-bg);
     overflow-x: hidden;
 }
@@ -36,6 +36,11 @@ body {
     --text-color-light: white;
     --background-color-light: #fff;
     --background-color-alternate: #FDFDFC;
+    --page-header-bg: #ffffff;
+    --page-header-bg-2: rgba(199, 61, 150, 0.15);
+    --page-header-bg-3: rgba(50, 136, 199, 0.12);
+    --page-header-bg-4: rgba(26, 103, 91, 0.12);
+    --page-header-bg-5: rgba(147, 213, 90, 0.15);
 
     --max-width-img: 350px;
     --max-width-content: 1100px;

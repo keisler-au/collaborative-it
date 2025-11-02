@@ -28,8 +28,16 @@
     padding: 10px 0;
     letter-spacing: 2px;
     flex-wrap: wrap;
-    color: var(--primary-color);
     min-width: 40rem;
+    background-image: linear-gradient(to right, 
+        var(--primary-color) 25%,
+        var(--secondary-color) 90%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
 }
 
 .animated-headline__text {
