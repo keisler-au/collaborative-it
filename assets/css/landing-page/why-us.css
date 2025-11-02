@@ -7,7 +7,12 @@
 .why-us-item {
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.08),
+        0 6px 12px rgba(0, 0, 0, 0.1),
+        0 12px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .why-us-item h3 {
