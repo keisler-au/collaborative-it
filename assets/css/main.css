@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     color: var(--text-color);
@@ -19,6 +24,8 @@ body {
         var(--page-header-bg-2) 100%
     ), var(--body-bg);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 /* ==========================================================================

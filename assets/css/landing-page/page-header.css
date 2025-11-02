@@ -14,7 +14,7 @@
 
 .header-container {
     position: relative;
-    width: calc(var(--max-width-img) + 100px);
+    max-width: calc(var(--max-width-img) + 100px);
     margin: 0 auto;
 }
 
@@ -29,7 +29,6 @@
     letter-spacing: 2px;
     flex-wrap: wrap;
     color: var(--primary-color);
-    min-width: 40rem;
 }
 
 .animated-headline__text {
