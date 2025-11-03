@@ -52,6 +52,7 @@ body {
     --max-width-img: 350px;
     --max-width-content: 1100px;
 
+    --font-size-xxs: 0.8rem;
     --font-size-xs: 0.9rem;
     --font-size-sm: 0.95rem;
     --font-size-md: 1rem;

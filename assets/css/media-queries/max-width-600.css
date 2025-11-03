@@ -72,7 +72,7 @@
        ========================================================================== */
     .page-header-container {
         grid-template-columns: 1fr;
-        margin: 2rem 1rem;
+        margin: 2rem 1.8rem;
         gap: 2rem;
         justify-items: start;
     }
@@ -97,7 +97,6 @@
 
     .animated-headline {
         width: 100%;
-        font-size: var(--font-size-lg);
         padding: 0;
     }
 
@@ -110,8 +109,8 @@
     }
 
      .animated-headline__text {
-                vertical-align: top;
-        font-size: var(--font-size-sm);
+        vertical-align: top;
+        font-size: var(--font-size-xs);
     }
 
     .header-container {
