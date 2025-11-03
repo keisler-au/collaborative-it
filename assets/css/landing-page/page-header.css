@@ -29,6 +29,7 @@
     letter-spacing: 2px;
     flex-wrap: wrap;
     color: var(--primary-color);
+    width: 650px;
 }
 
 .animated-headline__text {

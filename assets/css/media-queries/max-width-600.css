@@ -96,9 +96,9 @@
     }
 
     .animated-headline {
-        font-size: var(--font-size-sm);
+        width: 100%;
+        font-size: var(--font-size-lg);
         padding: 0;
-        min-width: auto;
     }
 
     .animated-headline__static-text {
@@ -110,11 +110,15 @@
     }
 
      .animated-headline__text {
+                vertical-align: top;
         font-size: var(--font-size-sm);
     }
 
     .header-container {
         max-width: 350px;
+        display: flex;
+        justify-content: end;
+        margin: 0;
     }
 
     .header-container img {
